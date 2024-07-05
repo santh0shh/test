@@ -1,0 +1,535 @@
+@media(max-width:960px){
+    #abtus #abtnote{
+        width: 80% !important;
+    }
+    #diet .blocks{
+        flex-direction: column;
+        align-items: center;
+    }
+    #diet .para{
+        width: 480px !important;
+    }
+    #exer .btns .btn button{
+        margin: 20px;
+    }
+}
+@media (max-width:750px) {
+    #exer .btns{
+        flex-direction: column;
+    }
+    #exer .btns .btn{
+        justify-content: center;
+    }
+    #exer .bun{
+        flex-direction: column;
+    }
+    #exer .bun .sub{
+        width: auto !important;
+    }
+}
+@media(max-width:660px){
+    #header .lheader a::before{
+        content: "NF";
+        position: absolute;
+        visibility: visible;
+    }
+    #header .lheader a{
+        visibility: hidden;
+        width: 0;
+    }
+    .home .para{
+        width: 90% !important;
+        margin: 0px auto;
+    }
+    .home h1{
+        padding-left: 0px !important;
+    }
+    #exer .jam .temp{
+        height: 80px;
+        margin: 10px;
+    }
+    #exer .jam .r{
+        margin-right: 10px !important;
+    }
+    #exer .jam .l{
+        margin-left: 10px !important;
+    }
+    #contact .mypro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:575px){
+    #header{
+        height: 50px !important;
+    }
+    #header #login{
+        height: 65% !important;
+        margin: 8px !important;
+    }
+    #header .lheader{
+        display: none !important;
+    }
+    #header .down{
+        margin-top: 50px;
+        border-radius: 10px;
+        height: 0;
+        overflow: hidden;
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+    #header .rheader{
+        float: none;
+        border: 1px solid white;
+        margin: 0;
+        background-color: black;
+
+    }
+    #header .rheader a{
+        width: 100%;
+        text-align: center;
+    }
+    .rheader::before {
+        display: none; 
+    }
+    .rheader:hover::before {
+        width: 0%; 
+        transition: none; 
+    }
+    .rheader a:hover {
+        text-shadow: none; 
+    }
+    #dropdown{
+        display: block !important;
+        top: 8px;
+        left: 8px;
+        transition: 0.5s;
+    }
+    #dropdown button{
+        transition: 0.5s;
+        height: 32px;
+    }
+}
+@media (max-width:500px) {
+    #diet .imgcrp{
+        width: 95% !important;
+    }
+    #diet .para{
+        width: auto !important;
+    }
+    #exer .temp{
+        height: unset !important;
+        width: 150px !important;
+        margin: 10px !important;
+    }
+    #exer .btns .btn #btn1{
+        margin: 30px 10px 10px 0;
+    }
+    #exer .btns .btn #btn2{
+        margin: 30px 0 20px 10px;
+    }
+    #exer .btns .btn #btn3{
+        margin: 20px 10px 40px 0;
+    }
+    #exer .btns .btn #btn4{
+        margin: 20px 0 40px 10px;
+    }
+}
+@media(max-width:425px){
+    h1, p, li{
+        font-size: unset !important;
+    }
+    .bmi{
+        height: auto !important;
+        width: 80% !important;
+    }
+    .bmi input{
+        width: 80% !important;
+    }
+    .bmi p{
+        margin-left: 10% !important;
+    }
+    #diet .imgcrp{
+        height: 300px !important;
+    }
+    #diet .imgcrp img{
+        width: 300px;
+    }
+    .head{
+        width: auto !important;
+        height: initial !important;
+    }
+}
+@media(max-width:375px){
+    .bmi{
+        width: 95% !important;
+    }
+}
+
+@media(max-height:660px){
+    #bmi{
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+    .bg{
+        height: 660px !important;
+    }
+}
+@media(max-height:350px){
+    h1, b, p{
+        font-size: unset !important;
+    }
+    a{
+        font-size:initial !important;
+    }
+    .para{
+        height: initial !important;
+        padding: 20px !important;
+    }
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+b{
+    font-size: 38px;
+}
+b, .rheader, #login{
+    font-family: "Roboto",sans-serif;
+}
+
+.bg{
+    height: 100%; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: green;
+}
+
+#header{
+    height: 75px; 
+    width: 100%; 
+    position: fixed; 
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    transition: top 0.5s ease;
+}
+.lheader{
+    height: 100%; 
+    font-size: 50px; 
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.rheader{
+    font-size: 20px; 
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    position: relative;
+}
+.rheader a{
+    padding: 25px 0;
+}
+.rheader::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+}
+.rheader:hover::before{
+    width: 100%;
+    transition: 0.2s;
+}
+.rheader a:hover{
+    text-shadow: 1px 1px 10px blue;
+}
+#login{
+    background-color: blue;
+    border-radius: 5px;
+    height: 50%;
+    margin: 20px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+#login a{
+    padding: 10px 20px;
+}
+#login:hover{
+    background-color: darkblue;
+    transition: 0.2s;
+}
+
+#dropdown{
+    position: fixed;
+    display: none;
+}
+#dropdown .line{
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+    border-radius: 1px;
+}
+
+
+
+.home{
+    background-image: url('mainimg.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.home .para{
+    width: 600px;
+}
+.home h1{
+    font-size: 30px;
+    padding-left: 100px;
+}
+.button{
+    background-color: black;
+    margin: 0px auto;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.button:hover{
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+.button a:hover{
+    color: black;
+}
+
+
+
+#abtus{
+    background-color: whitesmoke;
+}
+#abtus #abtnote{
+    font-size: 22px; 
+    width: 60%;
+}
+
+
+#bmi{
+    height: auto; 
+    width: 100%;
+}
+.head{
+    height: 50px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.bmi{
+    height: 400px; 
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px turquoise;
+    background-color: black;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 1.5s;
+}
+.bmi p{
+    margin: 40px 40px 5px; 
+    font-size: 28px;
+    font-family: sans-serif;
+    color: turquoise;
+}
+.bmi input{
+    display: flex;
+    margin: auto;
+    height: 40px;
+    width: 260px;
+    font-size: 20px;
+}
+.bmi input[type="submit"]{
+    margin: 53px auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bmi input[type="submit"]::onclick{
+    box-shadow:inset 0 0 5px turquoise;
+}
+
+#bmiphidden{
+    display: none;
+}
+#bmiphidden p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#bmiphidden a{
+    color: turquoise;
+    font-family: sans-serif;
+}
+#bmiphidden a:hover{
+    text-decoration: underline;
+}
+#bmipchange{
+    margin-bottom: -5px !important;
+}
+#bmipchange b{
+    font-size: larger;
+}
+
+
+
+
+#diet{
+    background-color: whitesmoke;
+}
+#diet .blocks{
+    display: flex;
+    justify-content: space-around;
+}
+#diet .imgcrp{
+    height: 550px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#diet .para{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#diet .para p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+#diet .para b{
+    font-size: 20px;
+}
+#diet .para ul{
+    overflow: hidden;
+}
+#diet .para li{
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+#diet .para li b{
+    font-size: 16px;
+    transition: 1.5s;
+}
+
+
+
+
+#exer .btns{
+    display: flex;
+    justify-content: center;
+}
+#exer .btns button{
+    color: white;
+    background-color: black;
+    border: none;
+    box-shadow: 0 0 5px gray;
+}
+#exer .btns .btn{
+    display: flex;
+}
+#exer button{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 40px;
+}
+#exer .bun, #exer .jam{
+    display: flex;
+}
+#exer .jam{
+    justify-content: space-evenly;
+}
+#exer .jam #exer .l{
+    margin-left: 10%;
+}
+#exer .jam #exer .r{
+    margin-right: 10%;
+}
+#exer .sub{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+#exer .temp{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px dotted black; */
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#exer .temp p{
+    font-size: 18px;
+}
+
+
+
+#contact .mypro{
+    display: flex;
+    justify-content: space-around;
+}
+#contact .myimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    transform: rotateY(180deg);
+    transition: 1.5s;
+}
+#contact .myimg img{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 415px;
+}
+#contact a{
+    color: black;
+    margin: 10px;
+}
+#contact .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#contact h2{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
