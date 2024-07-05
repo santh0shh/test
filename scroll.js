@@ -1,19 +1,6 @@
 let prevpos = window.scrollY;
 let navbar = document.getElementById("header");
 
-function adjustHeight() {
-      if (window.innerWidth > 1000 && window.innerWidth < window.innerHeight) {
-        document.getElementsByClassName("bg")[0].style.height = "660px";
-      } else {
-        document.getElementsByClassName("bg")[0].style.height = "100%";
-      }
-    }
-
-    // Adjust height on page load
-    adjustHeight();
-
-    // Adjust height on window resize
-    window.addEventListener('resize', adjustHeight);
 window.onscroll = function(){
     curpos = window.scrollY;
     let tmp;
@@ -57,7 +44,7 @@ window.onscroll = function(){
         }
         console.log("height " + curpos  + " " + window.innerHeight + " doc ht " + document.documentElement.scrollHeight);
     }
-    if(window.innerHeight + curpos >= document.documentElement.scrollHeight){
+    if(window.innerHeight + curpos >= document.documentElement.scrollHeight - 2){
         document.getElementsByClassName('myimg')[0].style.transform = "rotateY(0deg)";
     }
 }
