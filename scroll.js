@@ -1,10 +1,19 @@
 let prevpos = window.scrollY;
 let navbar = document.getElementById("header");
 
-if(window.innerWidth > 1000  && window.innerWidth < window.innerHeight){
-    document.getElementsByClassName("bg")[0].style.height = "800px";
-}
+function adjustHeight() {
+      if (window.innerWidth > 1000 && window.innerWidth < window.innerHeight) {
+        document.getElementsByClassName("bg")[0].style.height = "660px";
+      } else {
+        document.getElementsByClassName("bg")[0].style.height = "100%";
+      }
+    }
 
+    // Adjust height on page load
+    adjustHeight();
+
+    // Adjust height on window resize
+    window.addEventListener('resize', adjustHeight);
 window.onscroll = function(){
     curpos = window.scrollY;
     let tmp;
