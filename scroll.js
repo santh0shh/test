@@ -44,7 +44,20 @@ window.onscroll = function(){
         }
         console.log("height " + curpos  + " " + window.innerHeight + " doc ht " + document.documentElement.scrollHeight);
     }
-    if(window.innerHeight + curpos >= document.documentElement.scrollHeight - 2){
+
+    const documentHeight = Math.max(
+            document.body.scrollHeight, 
+            document.body.offsetHeight, 
+            document.documentElement.clientHeight, 
+            document.documentElement.scrollHeight, 
+            document.documentElement.offsetHeight
+          );
+
+      // Calculate the scroll position
+      const scrollPosition = window.scrollY + window.innerHeight;
+
+      // Check if the user has reached the bottom of the page
+      if (scrollPosition >= documentHeight){
         document.getElementsByClassName('myimg')[0].style.transform = "rotateY(0deg)";
     }
 }
