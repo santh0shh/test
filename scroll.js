@@ -42,8 +42,8 @@ window.onscroll = function(){
         for(i=0;i<11;i++){
             document.getElementsByClassName('temp')[i].style.margin = '30px';
         }
-        alert(curpos  + window.innerHeight + " = " + document.documentElement.scrollHeight);
-        alert(h);
+        // alert(curpos  + window.innerHeight + " = " + document.documentElement.scrollHeight);
+        // alert(h);
     }
 
     const documentHeight = Math.max(
