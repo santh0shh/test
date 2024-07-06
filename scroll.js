@@ -5,7 +5,7 @@ window.onscroll = function(){
     curpos = window.scrollY;
     let tmp;
     
-    if(window.innerWidth > 575){
+    if(window.innerWidth > 475){
         tmp = "-75px";
     }
     else{
@@ -45,20 +45,7 @@ window.onscroll = function(){
         // alert(curpos  + window.innerHeight + " = " + document.documentElement.scrollHeight);
         // alert(h);
     }
-
-    const documentHeight = Math.max(
-            document.body.scrollHeight, 
-            document.body.offsetHeight, 
-            document.documentElement.clientHeight, 
-            document.documentElement.scrollHeight, 
-            document.documentElement.offsetHeight
-          );
-
-      // Calculate the scroll position
-      const scrollPosition = window.scrollY + window.innerHeight;
-
-      // Check if the user has reached the bottom of the page
-      if (scrollPosition >= documentHeight){
+    if(window.innerHeight + curpos >= document.documentElement.scrollHeight-2){
         document.getElementsByClassName('myimg')[0].style.transform = "rotateY(0deg)";
     }
 }
