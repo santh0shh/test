@@ -5,7 +5,7 @@ window.onscroll = function(){
     curpos = window.scrollY;
     let tmp;
     
-    if(window.innerWidth > 475){
+    if(window.innerWidth >= 425){
         tmp = "-75px";
     }
     else{
