@@ -45,7 +45,7 @@ window.onscroll = function(){
         // alert(curpos  + window.innerHeight + " = " + document.documentElement.scrollHeight);
         // alert(h);
     }
-    if(window.innerHeight + curpos >= document.documentElement.scrollHeight-2){
+    if(window.innerHeight + curpos >= document.documentElement.scrollHeight-200){
         document.getElementsByClassName('myimg')[0].style.transform = "rotateY(0deg)";
     }
 }
