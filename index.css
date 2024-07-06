@@ -64,7 +64,8 @@
         display: none !important;
     }
     #header .down{
-        margin-top: 75px;
+        width: 98%;
+        margin: 75px auto 0 auto;
         border-radius: 10px;
         height: 0;
         overflow: hidden;
@@ -139,8 +140,9 @@
     }
     #header .down{
         margin-top: 50px;
+        width:99%;
     }
-    #dropdow{
+    #dropdown{
         margin: 8px;
     }
     .bmi{
