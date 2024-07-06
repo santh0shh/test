@@ -60,13 +60,6 @@
     }
 }
 @media (max-width:575px){
-    #header{
-        height: 50px !important;
-    }
-    #header #login{
-        height: 65% !important;
-        margin: 8px !important;
-    }
     #header .lheader{
         display: none !important;
     }
@@ -138,6 +131,13 @@
 @media(max-width:425px){
     h1, p, li{
         font-size: unset !important;
+    }
+    #header{
+        height: 50px !important;
+    }
+    #header #login{
+        height: 65% !important;
+        margin: 8px !important;
     }
     .bmi{
         height: auto !important;
